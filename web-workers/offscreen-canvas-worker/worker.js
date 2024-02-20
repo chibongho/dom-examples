@@ -32,7 +32,6 @@ function startCounting() {
 // Redraw Canvas B text
 function redrawCanvasB() {
   ctxWorker.clearRect(0, 0, canvasB.width, canvasB.height);
-  ctxWorker.font = "24px Verdana";
-  ctxWorker.textAlign = "center";
-  ctxWorker.fillText(counter, canvasB.width / 2, canvasB.height / 2);
+  ctxWorker.fillStyle = "#ff0000"; // try changing this to "#fe0000"
+  ctxWorker.fillRect(0, 0, canvasB.width, canvasB.height);
 }

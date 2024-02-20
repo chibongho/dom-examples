@@ -100,9 +100,8 @@
       // Redraw Canvas A counter
       function redrawCanvasA() {
         ctxA.clearRect(0, 0, canvasA.width, canvasA.height);
-        ctxA.font = "24px Verdana";
-        ctxA.textAlign = "center";
-        ctxA.fillText(counter, canvasA.width / 2, canvasA.height / 2);
+        ctxA.fillStyle = "#ff0000";
+        ctxA.fillRect(0, 0, canvasA.width, canvasA.height);
       }
 
       // This function creates heavy (blocking) work on a thread
